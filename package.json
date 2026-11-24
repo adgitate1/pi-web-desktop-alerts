@@ -1,0 +1,38 @@
+{
+  "name": "pi-web-desktop-alerts",
+  "version": "1.0.0",
+  "description": "Desktop notifications in PI WEB when a conversation needs your input or finishes a run.",
+  "private": false,
+  "license": "MIT",
+  "author": "Steven Adger",
+  "type": "module",
+  "keywords": [
+    "pi-web.dev-plugin",
+    "pi-package",
+    "pi-web",
+    "notifications"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adgitate1/pi-web-desktop-alerts.git"
+  },
+  "homepage": "https://github.com/adgitate1/pi-web-desktop-alerts#readme",
+  "bugs": {
+    "url": "https://github.com/adgitate1/pi-web-desktop-alerts/issues"
+  },
+  "files": [
+    "pi-web-plugin.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "piWeb": {
+    "plugins": [
+      {
+        "id": "desktop-alerts",
+        "browserRoot": ".",
+        "module": "pi-web-plugin.js",
+        "machineSpecific": false
+      }
+    ]
+  }
+}
